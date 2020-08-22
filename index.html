@@ -20,9 +20,10 @@
     }
 
     .column-s {
+    
         float: left;
         width: 16.66%;
-        padding: 10px;
+        padding:1px;
         height: 60px;
         /* Should be removed. Only for demonstration */
     }
@@ -58,11 +59,10 @@
     }
 
     /* Clear floats after the columns */
-    .row {
-        width: 100%;
-        
-    }
-
+    
+.h3{
+    padding-top: 0px;
+}
     .row:after {
         content: "";
         display: table;
@@ -75,7 +75,7 @@
 
     <div class="row" style="margin-left: 20%; background-color:orange; height: 100px;">
         <div class="column-s ">
-            <img src="https://icon-library.com/images/new-job-icon/new-job-icon-15.jpg" alt="https://image.flaticon.com/icons/png/512/1246/1246834.png" style="width: 100px;height: 100px;margin-left: 140px;">
+            <img src="https://icon-library.com/images/new-job-icon/new-job-icon-15.jpg" alt="https://image.flaticon.com/icons/png/512/1246/1246834.png" style="width: 100px;height: 100px;margin-left: 100px;">
         </div>
         <div class="column-l">
             <h1 style="margin-bottom: 1px;">Job Application</h1> 
@@ -88,14 +88,14 @@
 
     <div class="row" style="margin-left: 20%; background-color:orange;">
         <div class="column-s" style="">
-            <h2>Full Name</h2>
+            <h3> Full Name <span style="color:red;">*</span></h3>
         </div>
         <div class="column-m" style="background:pink;">
-            <div class="column-m" style="width: 46%; background:yellow;">
+            <div class="column-m" style="width: 45%; background:yellow;">
                 <input type="text" style="width: 100%;"> <br>
                 First Name
             </div>
-            <div class="column-m" style="width: 46%; background: orange;" >
+            <div class="column-m" style="width: 45%; background: orange;" >
                 <input type="text" style="width: 100%;"> <br>
                 Last Name
             </div>
@@ -108,11 +108,11 @@
 -->
 <div class="row" style="margin-left: 20%; background-color:orange;">
         <div class="column-s" style="background-color:#aaa;">
-            <h2>Current Address</h2>
+            <h3>Current Address  <span style="color:red;">*</span></h3>
         </div>
         <div class="column-m" style="background-color:green;">
             <div class="column-full">
-                <input type="text" style="width: 96.33%;"> <br>
+                <input type="text" style="width: 95%;"> <br>
                 Street Address
             </div>
 
@@ -125,7 +125,7 @@
         </div>
         <div class=" column-m" style="background-color:green;">
             <div class="column-full">
-                <input type="text" style="width: 96.33%;"> <br>
+                <input type="text" style="width: 95%;"> <br>
                 Street Address Line 2
             </div>
 
@@ -139,11 +139,11 @@
 
         </div>
         <div class=" column-m" style="background-color:green;">
-            <div class="column-m" style="width: 46%;">
+            <div class="column-m" style="width: 45%;">
                 <input type="text" style="width:100%;" ><br>
                 City
             </div>
-            <div class="column-m" style="width: 46%;">
+            <div class="column-m" style="width: 45%;">
                 <input type="text" style="width: 100%;">
                 State/Province
             </div>
@@ -156,12 +156,12 @@
             <!-- empty-->
         </div>
         <div class=" column-m" style="background-color:green;">
-            <div class="column-m">
-                <input type="text"><br>
+            <div class="column-m" style="width: 45%;">
+                <input type="text" style="width: 100%;"><br>
                 Postal/Zip Code
             </div>
-            <div class="column-m">          
-                <select id="country" name="country" class="form-control">
+            <div class="column-m" style="width:45%;">          
+                <select id="country" name="country" class="form-control" style="width:100%;">
                     <option value="none" selected disabled hidden>
                     Select an Option 
                      </option>  
@@ -425,14 +425,14 @@
         <div class="column-s" style="background-color:#aaa;">
 
 
-            <h2>Email Address</h2>s
+            <h3>Email Address  <span style="color:red;">*</span></h3>
 
 
 
         </div>
         <div class="column-m" style="background-color: greenyellow;">
-            <div class="column-m">
-                <input type="text">
+            <div class="column-full">
+                <input type="text" style="width: 95%;">
             </div>
 
 
@@ -445,17 +445,17 @@
 
     <div class="row" style="margin-left: 20%; background-color:orange;">
         <div class="column-s" style="background-color:#aaa;">
-            <h2>Phone Number</h2>
+            <h3>Phone Number  <span style="color:red;">*</span></h3>
 
         </div>
         <div class="column-m" style="background-color: orange;">
-            <div class="column-m">
-                <input type="text"> <br>
+            <div class="column-m" style="width: 45%;">
+                <input type="text" style="width:100%"> <br>
                 Area Code
             </div>
 
-            <div class="column-m" style="background-color: greenyellow;">
-                <input type="text"> <br>
+            <div class="column-m" style="background-color: greenyellow;width: 45%;">
+                <input type="text" style="width: 100%;"> <br>
                 Phone Number
             </div>
         </div>
@@ -468,12 +468,12 @@
 
     <div class="row" style="margin-left: 20%; background-color:orange;">
         <div class="column-s" style="background-color:#aaa;">
-            <h2>Applying for Position</h2>
+            <h3>Applying for Position  <span style="color:red;">*</span></h3>
 
         </div>
         <div class="column-m" style="background-color: greenyellow;">
-            <div class="column-m">
-                <select id="jobs" name="jobs" class="form-control">
+            <div class="column-full">
+                <select id="jobs" name="jobs" class="form-control" style="width: 96.66%;">
                     <option value="Software Engineer">Software Engineer</option>
                     <option value="CEO">CEO</option>
                     <option value="CTO">CTO</option>
@@ -490,22 +490,22 @@
 
     <div class="row" style="margin-left: 20%; background-color:orange;">
         <div class="column-s" style="background-color:#aaa;">
-            <h2>Start Date</h2>
+            <h3>Start Date</h3>
 
         </div>
         <div class="column-m" style="background-color: orange; ">
-            <div class="column-m " style="width: 30%;">
-                <input type="text" style="width:30%;"> <br>
+            <div class="column-m " style="width:28%;">
+                <input type="text" style="width:100%;"> <br>
                 Month
             </div>
 
-            <div class="column-m" style="background-color: yellow; width: 30%;">
-                <input type="text" style="width: 30%;"> <br>
+            <div class="column-m" style="background-color: yellow; width: 28%;">
+                <input type="text" style="width: 100%;"> <br>
                 Day
             </div>
 
             <div class="column-m" style="background-color: greenyellow; width: 28%; ">
-                <input type="text" style="width: 30%;"> <br>
+                <input type="text" style="width: 100%;"> <br>
                 Year
             </div>
         </div>
@@ -513,14 +513,14 @@
 
     <div class="row" style="margin-left: 20%; background-color:orange;">
         <div class="column-s">
-            <h2>Upload Resume</h2>
+            <h3>Upload Resume  <span style="color:red;">*</span></h3>
         </div>
 
         <div class="column-m">
             <div class="column-m">
                 <form action="/action_page.php">
                     <input type="file" id="myFile" name="filename">
-                    <input type="submit">
+                    <input type="submit" style="margin-top: 40%;">
                   </form>
             </div>
             
